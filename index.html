@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax backgroud</title>
+</head>
+<style>
+    *,
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .parallax {
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .intro {
+        background-image: url('assets/summer.jpg');
+    }
+
+    .content {
+        background-image: url('assets/winter.jpg');
+    }
+
+    .footer {
+        background-image: url('assets/autumn.jpg');
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: fixed;
+        height: 100vh;
+    }
+
+    .title {
+        font-size: 3em;
+        letter-spacing: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+    
+</style>
+
+<body>
+    <div class="parallax intro">
+        <div class="cta">
+            <div class="cta title">Parallax Backgroud</div>
+        </div>
+    </div>
+    <div class="parallax content"> </div>
+    <div class="parallax footer"></div>
+</body>
+
+</html>
